@@ -4,7 +4,7 @@
 # Check sections <---- EDIT:
 
 BootStrap: docker
-From: bethgelab/deeplearning:cuda9.2-cudnn7
+From: floydhub/pytorch:1.0.0-gpu.cuda9cudnn7-py3.37
 
 %runscript
     # When executed, the container will run Torch
