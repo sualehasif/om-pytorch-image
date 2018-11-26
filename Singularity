@@ -11,6 +11,7 @@ From: floydhub/pytorch:1.0.0-gpu.cuda9cudnn7-py3.37
     exec /usr/local/torch/install/bin/th "$@"
 
 %post
+    apt-get update && apt-get -y install locales
     # Set up some required environment defaults
     export LC_ALL=C
     export PATH=/bin:/sbin:/usr/bin:/usr/sbin:$PATH
